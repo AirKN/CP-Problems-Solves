@@ -1,11 +1,11 @@
-*.*
+*
 
 !*.c
 !*.cpp
 !*.py
-!Codeforces
-!Codewars
-!Leetcode
-!Codeforces/bitmasks
+!codeforces
+!codewars
+!leetcode
+!codeforces/bitmasks
 
 !.gitignore
