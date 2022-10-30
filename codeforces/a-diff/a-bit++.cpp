@@ -12,9 +12,9 @@ int main()
         if(s[0]=='+' || s[2]=='+')
             x++;
         else
-            x--; 
+            x--;
     }
-    
+
     cout << x;
     return 0;
 }
