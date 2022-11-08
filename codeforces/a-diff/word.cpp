@@ -5,10 +5,10 @@ using namespace std;
 
 int main()
 {
-    string s; 
+    string s;
     cin >> s;
     int l = s.size();
-    int x=0,b=0;
+    int x=0;
     for(int i=0;i<l;i++)
         if(s[i] >= 'a' && s[i] <= 'z')
             x++;
@@ -18,7 +18,7 @@ int main()
     else
         for(int i=0;i<l;i++)
             s[i]=tolower(s[i]);
-            
+
     cout << s << '\n';
     return 0;
 }
