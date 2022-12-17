@@ -11,6 +11,20 @@ using namespace std;
 
 int32_t main(){
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-overhere
+    int n;cin>>n;
+    int a[n],s=0;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+        s+=a[i];}
+    sort(a,a+n,greater<int>());
+    int t=0,c=0;
+    for(int i=0;i<n;i++){
+        c++;
+        t+=a[i];
+        if(t > (s-t)){
+            cout<<c;
+            return 0;}
+
+    }
 
     return 0;}

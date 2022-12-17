@@ -11,6 +11,11 @@ using namespace std;
 
 int32_t main(){
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-overhere
+    char c;string s;cin>>c>>s;
+    int l=s.length(), p=(c=='R')?-1:1;
+    string k="qwertyuiopasdfghjkl;zxcvbnm,./",r="";
+    for(int i=0;i<l;i++)
+        r+=k[k.find(s[i])+p];
+    cout<<r;
 
     return 0;}

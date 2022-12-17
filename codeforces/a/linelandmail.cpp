@@ -8,15 +8,8 @@ int main(){
     ll a[n];
     for(ll i=0;i<n;i++)
         cin>>a[i];
-    for(ll i=0;i<n;i++){
-        ll ma=abs(a[i]-a[n-1]);
-        ll mi=abs(a[i]-a[0]);
-        if(i==0)
-            mi=abs(a[i]-a[1]);
-        if(i==n-1)
-            ma=abs(a[i]-a[n-2]);
-        cout<<mi<<' '<<ma<<'\n';
-    }
+    for(ll i=0;i<n;i++)
+        cout<<min(a[i+1]-a[i],a[i]-a[i-1])<<' '<<max(a[i]-a[0],a[n-1]-a[i])<<'\n';
 
 
     return 0;}
